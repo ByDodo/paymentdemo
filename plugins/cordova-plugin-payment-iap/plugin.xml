@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-payment-iap"
+    version="2.0.52">
+
+	<name>Cordova IAP plugin</name>
+    <description>Cordova IAP plugin</description>
+    <author>Sang Ki Kwon (Cranberrygame)</author>		
+    <license>MIT</license>
+    <keywords>cordova,plugin,payment,IAP</keywords>
+    <repo>https://github.com/cranberrygame/cordova-plugin-payment-iap</repo>
+    <issue>https://github.com/cranberrygame/cordova-plugin-payment-iap/issues</issue>
+	<engines>
+	    <engine name="cordova" version=">=3.0.0" />
+	</engines>
+	
+    <js-module src="www/iap.js" name="iap">
+        <clobbers target="window.iap" />
+    </js-module>
+    
+    <!-- android -->
+    <platform name="android">    
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="IAP" >
+				<param name="android-package" value="jp.wizcorp.phonegap.plugin.wizPurchase.IAP"/>
+			</feature>
+	    </config-file>
+	    
+		<config-file target="AndroidManifest.xml" parent="/manifest">
+			<uses-permission android:name="com.android.vending.BILLING" />
+        </config-file>		
+		
+	    <source-file src="src/android/IAP.java" target-dir="src/jp/wizcorp/phonegap/plugin/wizPurchase"/>
+	            
+	    <source-file src="src/android/Base64.java" target-dir="src/com/smartmobilesoftware/util"/>
+	    <source-file src="src/android/Base64DecoderException.java" target-dir="src/com/smartmobilesoftware/util"/>
+	    <source-file src="src/android/IabException.java" target-dir="src/com/smartmobilesoftware/util"/>
+		<source-file src="src/android/IabHelper.java" target-dir="src/com/smartmobilesoftware/util"/>
+		<source-file src="src/android/IabResult.java" target-dir="src/com/smartmobilesoftware/util"/>
+		<source-file src="src/android/Inventory.java" target-dir="src/com/smartmobilesoftware/util"/>
+		<source-file src="src/android/Purchase.java" target-dir="src/com/smartmobilesoftware/util"/>
+		<source-file src="src/android/Security.java" target-dir="src/com/smartmobilesoftware/util"/>
+		<source-file src="src/android/SkuDetails.java" target-dir="src/com/smartmobilesoftware/util"/>              
+	    <source-file src="src/android/IInAppBillingService.aidl" target-dir="src/com/android/vending/billing"/>
+    </platform>
+	
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+		    <feature name="IAP">
+		        <param name="ios-package" value="IAP" />
+		        <param name="onload" value="true" />
+		    </feature>
+        </config-file>
+               
+        <header-file src="src/ios/IAP.h" />
+        <source-file src="src/ios/IAP.m" />        
+
+        <header-file src="src/ios/IAPDebugLog.h" />
+        
+        <framework src="StoreKit.framework" />                	
+    </platform>
+	
+	<!-- wp8 -->
+	<platform name="wp8">
+        <config-file target="config.xml" parent="/*">
+            <feature name="IAP">
+                <param name="wp-package" value="IAP"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/wp8/IAP.cs" />
+    </platform>	
+</plugin>

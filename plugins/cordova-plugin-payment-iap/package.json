@@ -1,0 +1,67 @@
+{
+  "_from": "cordova-plugin-payment-iap",
+  "_id": "cordova-plugin-payment-iap@2.0.52",
+  "_inBundle": false,
+  "_integrity": "sha1-bmixqvf4XE+9LE5P+r3cmuRrb+A=",
+  "_location": "/cordova-plugin-payment-iap",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-payment-iap",
+    "name": "cordova-plugin-payment-iap",
+    "escapedName": "cordova-plugin-payment-iap",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-payment-iap/-/cordova-plugin-payment-iap-2.0.52.tgz",
+  "_shasum": "6e68b1aaf7f85c4fbd2c4e4ffabddc9ae46b6fe0",
+  "_spec": "cordova-plugin-payment-iap",
+  "_where": "c:\\inetpub\\www\\yeni\\payment",
+  "author": {
+    "name": "cranberrygame"
+  },
+  "bugs": {
+    "url": "https://github.com/cranberrygame/cordova-plugin-payment-iap/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-payment-iap",
+    "platforms": [
+      "android",
+      "ios",
+      "wp8"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova IAP plugin",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "homepage": "https://github.com/cranberrygame/cordova-plugin-payment-iap#readme",
+  "keywords": [
+    "cordova",
+    "plugin",
+    "payment",
+    "IAP",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-wp8"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-payment-iap",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cranberrygame/cordova-plugin-payment-iap.git"
+  },
+  "version": "2.0.52"
+}
