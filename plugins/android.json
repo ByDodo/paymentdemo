@@ -1,0 +1,27 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.payment.app"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.payment.app"
+    },
+    "cordova-plugin-androidx": {
+      "PACKAGE_NAME": "com.payment.app"
+    },
+    "cordova-plugin-payment-iap": {
+      "PACKAGE_NAME": "com.payment.app"
+    },
+    "cordova-plugin-purchase": {
+      "PACKAGE_NAME": "com.payment.app"
+    }
+  },
+  "dependent_plugins": {}
+}
