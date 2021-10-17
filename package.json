@@ -1,0 +1,37 @@
+{
+  "name": "com.payment.app",
+  "displayName": "Payment",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^9.1.0",
+    "cordova-plugin-androidx": "^3.0.0",
+    "cordova-plugin-network-information": "^3.0.0",
+    "cordova-plugin-payment-iap": "^2.0.52",
+    "cordova-plugin-purchase": "^10.6.1",
+    "cordova-plugin-whitelist": "^1.3.5"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-network-information": {},
+      "cordova-plugin-androidx": {},
+      "cordova-plugin-payment-iap": {},
+      "cordova-plugin-purchase": {
+        "BILLING_KEY": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtApRCMqaUdn+pZQ55EDeUzZnLgyvpp0OwLPmjKXHnlE4YQkSlfpQDA6+xAog4850JbkoasCuz8zw0QtCelQong8MU7yfRG664uMHmtZ65sfS/KGpDpdEDCTuPGMpIxLgnPyYYbD/aMJj0yaB4Dw7of8FRqWWYfPNgn7xn5ymIUmWYfTV6yzJR9UbF6Ilu24nN6fMIHtxwzbb8Xf9ICuG/rb+JDoeAb59IZ73VXOZwzAHzk5HSdBaGSUUggrOk9MypGEsEbyLxT0GqxlM7zZmUxNpPcfSB/r9coGznl6GE1H8CBRg4MMhzrgKiZE/GaLelPZKzuLs3q70DgX7QqOGuwIDAQAB"
+      }
+    },
+    "platforms": [
+      "android"
+    ]
+  }
+}
